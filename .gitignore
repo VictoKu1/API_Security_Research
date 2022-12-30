@@ -5,7 +5,7 @@ __pycache__/
 .idea
 *.exe
 *.json
-*.zip
+combined_datasets_for_students.zip
 rf3_model_label.sav
 
 
