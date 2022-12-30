@@ -6,7 +6,8 @@ __pycache__/
 *.exe
 *.json
 *.zip
-*.sav
+Model/2/*.sav
+Model/3/*.sav
 
 
 
