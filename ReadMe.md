@@ -2,25 +2,6 @@
 
 
 
-##### Installation:
-
-
-
-Linux:
-```
-
-        ./dataset.sh
-
-```
-Windows:
-```
-
-        dataset.bat
-
-
-```
-
-
 [Link to the challenge](https://github.com/ArielCyber/Cisco_Ariel_Uni_API_security_challenge)
 
 ## Description
@@ -203,3 +184,21 @@ In order to submit your result file please upload it to [this](https://drive.goo
 <img src="https://github.com/ArielCyber/Cisco_Ariel_Uni_API_security_challenge/blob/main/Images/result_folder.png" align="middle">
 
 Once a day our grading script will run over the files and update your grading files and leaderboard accordingly.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
