@@ -6,7 +6,6 @@ __pycache__/
 *.exe
 *.json
 CompetitionDatasets.zip
-Model/3/*.sav
 
 
 
@@ -115,6 +114,7 @@ venv.bak/
 
 # Word temp files
 ~*
+
 
 
 
