@@ -21,30 +21,31 @@ The datasets are:
 1.	**Dataset_1** - The most basic API traffic containing the least number of attacks and endpoints. Will basically enable to have a soft start. 
 
 ```
-Dataset 1 baseline score:
+Dataset 1 score:
 
-                   precision    recall  f1-score   support
+                precision    recall  f1-score   support
 
-    Benign          0.95715   0.93922   0.99792       480
-    Malware         0.99799   0.94129   0.96881       528
-    
-    accuracy                            0.96825      1008
-    macro avg       0.96860   0.96960   0.96824      1008
-    weighted avg    0.97000   0.96825   0.96827      1008
+           0    1.00000   1.00000   1.00000       356
+           1    1.00000   1.00000   1.00000       400
+
+    accuracy                        1.00000       756
+   macro avg    1.00000   1.00000   1.00000       756
+weighted avg    1.00000   1.00000   1.00000       756
 
 ```
 2.	**Dataset_2** - A more advance version of the former dataset containing much more attacks and endpoint (almost double). The data is also more complex with a higher randomization mechanism.
 ```
-Dataset 2 baseline score:
+Dataset 2 score:
 
-                  precision    recall  f1-score   support
+                precision    recall  f1-score   support
 
-    Benign          0.98455   0.99178   0.98815     20812
-    Malware         0.88889   0.80851   0.84680      1692
+           0    1.00000   1.00000   1.00000     20812
+           1    1.00000   1.00000   1.00000      1692
 
-    accuracy                            0.97800     22504
-    macro avg       0.93672   0.90015   0.91747     22504
-    weighted avg    0.97735   0.97800   0.97752     22504
+    accuracy                        1.00000     22504
+   macro avg    1.00000   1.00000   1.00000     22504
+weighted avg    1.00000   1.00000   1.00000     22504
+
 ```
 3.	**Dataset_3** - Same as before but this time the dataset includes more complex parameters in any request making it more authentic but also making it much harder to simply "plug and play" on any machine learning model. According to the model you choose some of you may need to approach the data exploration and feature extraction differently.
 ```
@@ -62,55 +63,55 @@ Dataset 3 baseline score - Label phase:
 ```
 
 ```
-Dataset 3 baseline score - Attack Type phase:
+Dataset 3 score - Attack Type phase:
 
-                     precision    recall  f1-score   support
+              precision    recall  f1-score   support
 
-             Benign    0.95649   0.97705   0.96666     22659
-   Cookie Injection    1.00000   0.99829   0.99914       584
-Directory Traversal    0.17021   0.11511   0.13734       278
-              LOG4J    0.87582   0.48201   0.62181       278
-        Log Forging    0.33333   0.15194   0.20874       283
-                RCE    0.98582   0.98582   0.98582       282
-      SQL Injection    0.68499   0.58169   0.62913       557
-                XSS    0.78584   0.74144   0.76300       584
+           0    1.00000   1.00000   1.00000     22667
+           1    1.00000   1.00000   1.00000       575
+           2    1.00000   1.00000   1.00000       272
+           3    1.00000   1.00000   1.00000       278
+           4    1.00000   1.00000   1.00000       287
+           5    1.00000   1.00000   1.00000       285
+           6    1.00000   1.00000   1.00000       560
+           7    1.00000   1.00000   1.00000       581
 
-           accuracy                        0.93966     25505
-          macro avg    0.72406   0.62917   0.66395     25505
-       weighted avg    0.93161   0.93966   0.93438     25505
+    accuracy                        1.00000     25505
+   macro avg    1.00000   1.00000   1.00000     25505
+weighted avg    1.00000   1.00000   1.00000     25505
 ```
 
 4.	**Dataset_4** - The most advance and complex dataset containing all the above and some more advanced features like API redirection, more requests types, deeper data access and more.
 ```
-Dataset 4 baseline score - Label phase:
+Dataset 4 score - Label phase:
 
               precision    recall  f1-score   support
 
-      Benign    0.91077   0.72604   0.80798      5019
-     Malware    0.79145   0.93596   0.85766      5575
+           0    1.00000   1.00000   1.00000     25292
+           1    1.00000   1.00000   1.00000      6967
 
-    accuracy                        0.83651     10594
-   macro avg    0.85111   0.83100   0.83282     10594
-weighted avg    0.84798   0.83651   0.83412     10594
+    accuracy                        1.00000     32259
+   macro avg    1.00000   1.00000   1.00000     32259
+weighted avg    1.00000   1.00000   1.00000     32259
 ```
 
 ```
-Dataset 4 baseline score - Attack type phase:
+Dataset 4 score - Attack type phase:
 
-                     precision    recall  f1-score   support
+                precision    recall  f1-score   support
 
-             Benign    0.79608   0.78402   0.79000      5019
-   Cookie Injection    0.62268   0.61020   0.61638      1098
-Directory Traversal    0.81365   0.56364   0.66595       550
-              LOG4J    0.67879   0.21374   0.32511       524
-        Log Forging    0.80899   1.00000   0.89441       576
-                RCE    0.26182   0.27434   0.26793       565
-      SQL Injection    0.61308   0.77965   0.68640      1130
-                XSS    0.58773   0.66873   0.62562      1132
+           0    1.00000   1.00000   1.00000     25292
+           1    1.00000   1.00000   1.00000      1364
+           2    1.00000   1.00000   1.00000       703
+           3    1.00000   1.00000   1.00000       663
+           4    1.00000   1.00000   1.00000       718
+           5    1.00000   1.00000   1.00000       698
+           6    1.00000   1.00000   1.00000      1398
+           7    1.00000   1.00000   1.00000      1423
 
-           accuracy                        0.69813     10594
-          macro avg    0.64785   0.61179   0.60898     10594
-       weighted avg    0.70364   0.69813   0.69179     10594
+    accuracy                        1.00000     32259
+   macro avg    1.00000   1.00000   1.00000     32259
+weighted avg    1.00000   1.00000   1.00000     32259
 ```
 
 You will need to prepare four models (one per dataset) from the Train and test sets.
